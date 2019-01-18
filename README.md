@@ -3,12 +3,12 @@ Shows how to install auto-sklearn on an Azure Databricks cluster
 
 
 # Create a new Azure Databricks workspace
-- You can use an existing workspace, but make sure you do not have lots of Libraries attached.  It is usually best to do in a clean workspace.
+- You can use an existing workspace, but make sure you do not have lots of Libraries attached to your cluster.  It is usually best to do in a clean workspace.  You can click on a cluster and click on Libraries to see what is attached.  See below: To clean up lots of libraries on your cluster
 
 
 # Install Databricks CLI
 - https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html
-- I perfer using the CLI since you do not need a cluster running to upload init scripts. You can created init scripts with a notebook, but sometimes they cause formatting issues of the file and the init script fails.
+- I perfer using the CLI since you do not need a cluster running to upload init scripts. You can create init scripts with a notebook, but sometimes this apporach creates a malformed file.
 
 
 # Upload the autosklearn.sh script
@@ -25,14 +25,17 @@ Shows how to install auto-sklearn on an Azure Databricks cluster
 - Select Python version 3
 - Start the cluster
 
-Create-Cluster.png
+![alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Create-Cluster.png)
 
 # Attach the library
 - Once the cluster has started
 - Go to your workspace and add the library
 
-Create-Library.png
-Install-Library.png
+![alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Create-Library.png)
+
+[alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Create-Library-PyPi)
+
+![alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Install-Library.png)
 
 # To clean up lots of libraries on your cluster
 - If you install a Databricks Library the defualt says "Install on all clusters".  This can cause issues like slow startup times and libraries failing to install properly due to conflicts.
