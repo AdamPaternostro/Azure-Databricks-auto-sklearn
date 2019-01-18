@@ -1,9 +1,10 @@
 # Azure-Databricks-auto-sklearn
-Shows how to install auto-sklearn on an Azure Databricks cluster
+- Shows how to install auto-sklearn on an Azure Databricks cluster
+- https://automl.github.io/auto-sklearn/stable/
 
 
 # Create a new Azure Databricks workspace
-- You can use an existing Databricks workspace, but make sure you do not have lots of Libraries attached to your cluster.  It is usually best to do in a clean workspace.  You can click on a cluster and click on Libraries to see what is attached.  To clean up lots of libraries on your cluster see the bottom of this page.
+- You can use an existing Databricks workspace, but make sure you do not have lots of Libraries attached to your cluster.  It is usually best to test this in a clean workspace.  You can click on a cluster and click on Libraries to see what is attached.  To clean up lots of libraries on your cluster see the bottom of this page.
 
 
 # Install Databricks CLI
@@ -17,8 +18,6 @@ Shows how to install auto-sklearn on an Azure Databricks cluster
 databricks configure --token {PLACE YOUR TOKEN HERE}
 
 dbfs mkdirs dbfs:/databricks/init/{clusterName-case-sensitive}
-
-dbfs rm dbfs:/databricks/init/{clusterName-case-sensitive}/autosklearn.sh
 
 dbfs cp autosklearn.sh dbfs:/databricks/init/{clusterName-case-sensitive}/autosklearn.sh
 
