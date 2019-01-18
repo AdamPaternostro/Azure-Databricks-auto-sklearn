@@ -13,12 +13,17 @@ Shows how to install auto-sklearn on an Azure Databricks cluster
 
 # Upload the autosklearn.sh script
 - You do not need a cluster running, start a command prompt
-- databricks configure --token {PLACE YOUR TOKEN HERE}
-- dbfs mkdirs dbfs:/databricks/init/{clusterName-case-sensitive}
-- dbfs rm dbfs:/databricks/init/{clusterName-case-sensitive}/autosklearn.sh
-- dbfs cp autosklearn.sh dbfs:/databricks/init/{clusterName-case-sensitive}/autosklearn.sh
-- dbfs ls dbfs:/databricks/init/{clusterName-case-sensitive}/
+```
+databricks configure --token {PLACE YOUR TOKEN HERE}
 
+dbfs mkdirs dbfs:/databricks/init/{clusterName-case-sensitive}
+
+dbfs rm dbfs:/databricks/init/{clusterName-case-sensitive}/autosklearn.sh
+
+dbfs cp autosklearn.sh dbfs:/databricks/init/{clusterName-case-sensitive}/autosklearn.sh
+
+dbfs ls dbfs:/databricks/init/{clusterName-case-sensitive}/
+```
 
 # Create a cluster
 - Must match the name that you just uploaded the script {clusterName-case-sensitive}
