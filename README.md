@@ -39,7 +39,7 @@ dbfs ls dbfs:/databricks/init/{clusterName-case-sensitive}/
 
 ![alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Create-Library.png)
 
-[alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Create-Library-PyPi)
+![alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Create-Library-PyPi.png)
 
 ![alt tag](https://raw.githubusercontent.com/AdamPaternostro/Azure-Databricks-auto-sklearn/master/images/Install-Library.png)
 
