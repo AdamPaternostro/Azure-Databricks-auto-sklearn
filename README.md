@@ -74,8 +74,8 @@ dbfs ls dbfs:/databricks/init/{clusterName-case-sensitive}/
 
 # To clean up lots of libraries on your cluster
 - To cleanly install a Library
-   - If you install a Databricks Library the defualt says "Install automatically on all clusters".  This can cause issues like slow startup times and libraries failing to install properly due to conflicts.
-   - To cleanly install a library, start a cluster, then install the library and check off the cluster.  Do not use the "Install automatically on all clusters"
+   - If you install a Databricks Library the defualt says "Install automatically on all clusters".  This can cause issues like slow startup times and libraries failing to install properly due to conflicts.  You should only install libraries on the clusters that you need them. 
+   - To cleanly install a library, start a cluster, then install the library and check-off the cluster.  Do not use the "Install automatically on all clusters"
 
 - To clean up libraries 
    - Go to each Cluster
